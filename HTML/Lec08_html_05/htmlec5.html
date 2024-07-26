@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture : 08 - HTML_5 [ FORM ]</title>
+</head>
+
+<body>
+    <!-- Create a simple form: -->
+    <form>
+        <label for="email">Enter Email ID:</label>
+        <input type="text" id="email" placeholder="example@gmail.com"> <!--Using place holders(faded text)-->
+        <br/>
+        <br/>
+        <label for="pass">Enter Password:</label>
+        <input type="password" id="pass">
+
+        <br/>
+        <br/>
+        <!--Two ways to create a Button-->
+        <input type="submit" value="Click here to submit"> <!--submit : this attribute sumbit the whole dat to server-->
+        <button>Click here</button>
+        
+    </form>
+
+    <hr>
+    <hr>
+    <br/>
+    <!-- Another form: -->
+    <!-- Use tages : fieldset,legend,label,input,select,option,button,textarea  -->
+    <form>
+
+        <fieldset>          <!--Use tag : <fileldset> to group multiple input together-->
+            <legend>HTML Dummy Form </legend>   <!-- tag : <legen> to give caption of fieldset-->
+
+            <label for="datepicker">Choose Date</label>
+            <input type="date" id="datepicker">     <br/>
+
+            <label for="dishes">Choose your dish :</label>
+            <select name="dishes" id="selecter1">       <!--<select> : create a drop down menu-->
+                <option value="Maggie">Maggie</option>
+                <option value="Chips">Chips</option>
+                <option value="Kurkure">Kurkure</option>
+            </select>
+            
+            <br/>
+            <button>This is button</button>
+
+            <br/>
+            <br/>
+            <textarea name="area1" id="area1" cols="30" rows="10" placeholder="Enter multiline text here..."></textarea>
+        </fieldset>
+
+    </form>
+
+    <!-- Input types :  -->
+    <!-- input attri : textfield, button, radio, checkbox, fileselect,image,passfield,date -->
+     <form>
+
+        <label for="textfield1">Text field area :</label>
+        <input type="text" name="textfield1" id="textfield1"><br/>
+
+        <label for="password1">Password :</label>
+        <input type="password" name="password1" id="password1">
+        <br/>
+        <br/>
+
+
+        <label for="button1">Button :</label>
+        <input type="button" name="button1" id="button1" value="Subscribe">
+        <br/>
+        <br/>
+
+        
+        <label for="radio1">Radio Buttoon 1 :</label>
+        <input type="radio" name="radio1" id="radio1">
+        
+        <label for="radio2">Radio Buttoon 2 :</label>
+        <input type="radio" name="radio2" id="radio2">
+        
+        <label for="radio">Radio Buttoon 3 :</label>
+        <input type="radio" name="radio3" id="radio3">
+        <br/>
+        <br/>
+
+
+        <label for="checkbox1">English</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1">
+        <label for="checkbox2">Hindi</label>
+        <input type="checkbox" name="checkbox2" id="checkbox2">
+        <br/>
+        <br/>
+
+
+        <label for="fileselect1">Upload file :</label>
+        <input type="file" name="fileselect1" id="fileselect1">
+        <br/>
+        <br/>
+
+
+        <input type="image" name="imgbutton1" id="imgbutton1" alt="Click here this is imgbutton" src="arrow image.jpg" width="100px">
+        <br/>
+        <br/>
+
+
+        <label for="datepicker1">Enter Date :</label>
+        <input type="date" name="datepicker1" id="datepicker1">
+        
+     </form>
+</body>
+</html>
