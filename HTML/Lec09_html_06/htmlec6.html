@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture : 09 - HTML_6 [ FORMS ] </title>
+</head>
+
+<br>
+
+    <!-- Form 1: Event Registration (See the image of form in folder.) -->
+    <form>
+        
+        <h3>Event Registration</h3>
+
+        <label for="username">Name :</label><br/>
+        <input type="text" name="username" id="username">
+        <br/>
+        <br/>
+
+        <label for="emailid">Email :</label><br/>
+        <input type="email" name="emailid" id="emailid">
+        <br/>
+        <br/>
+
+        <label for="phno">Phone :</label><br/>
+        <input type="tel" name="phno" id="phno">
+        <br/>
+        <br/>
+
+        <label for="occutype">Cccupation : </label><br/>
+        <select name="occutype" id="occutype">
+            <option value="Student">Student</option>
+            <option value="Proffesional">Proffesional</option>
+            <option value="Other">Others</option>
+        </select>
+        <br/>
+        <br/>
+
+        
+        <legend>Topics of Interest :</legend><br/>
+
+        <input type="checkbox" name="box1" id="box1">
+        <label for="box1">HTML</label>
+        <br/>
+        <input type="checkbox" name="box2" id="box2">
+        <label for="box2">CSS</label>
+        <br/>
+        <input type="checkbox" name="box3" id="box3">
+        <label for="box3">JavaScript</label>
+        <br/>
+        <br/>
+
+
+        <label for="textarea1">Comments :</label><br/>
+        <textarea name="textarea1" id="textarea1" cols="60" rows="5"></textarea>
+        
+
+        <input type="submit" name="regisbutton" value="Register">
+
+    </form>
+    
+    
+    
+    
+    
+    <hr><hr><br/><br/><br/>
+    <!-- Form 2: Job Applicaton (See the image of form in folder.) -->
+
+    <form>
+
+        <h3>Job Application</h3>
+
+        <label for="username2">Name :</label><br/>
+        <input type="text" name="username2" id="username2">
+        <br/>
+        <br/>
+
+        <label for="emailid2">Email :</label><br/>
+        <input type="email" name="emailid2" id="emailid2">
+        <br/>
+        <br/>
+
+        <label for="phno2">Phone :</label><br/>
+        <input type="tel" name="phno2" id="phno2">
+        <br/>
+        <br/>
+
+        <label for="resume2">Resume :</label><br/>
+        <input type="file" name="resume2" id="resume2">
+        <br/>
+        <br/>
+
+        <label for="exp2">Experience(years) :</label><br/>
+        <input type="number" name="exp2" id="exp2" min="0" max="20"> <!--'number' : input attr to create counter-->
+        <br/>
+        <br/>
+
+        <fieldset>
+            <legend>Skills:</legend>
+
+            <input type="checkbox" name="box11" id="box11"><br/>
+            <label for="box11">HTML</label>
+            <br/>
+            <input type="checkbox" name="box21" id="box21"><br/>
+            <label for="box21">CSS</label>
+            <br/>
+            <input type="checkbox" name="box31" id="box31"><br/>
+            <label for="box31">JavaScript</label>
+            
+        </fieldset>
+        <br/>
+        <br/>
+
+        <label for="education2">Higher Education:</label><br/>
+        <select name="education2" id="education2">
+            <option value="High School">High School</option>
+            <option value="Graduation">Graduation</option>
+            <option value="Post Graduation">Post Graduation</option>
+        </select>
+        <br/>
+        <br/>
+
+        
+        <label for="available2">Availability :</label>
+        <section>
+            <input type="radio" name="radio11" id="button11"><br/>  <!--To select either radio from multiple radio :-->
+            <label for="button11">Full-Time</label>                 <!--"name of all radio must be same"-->
+            <br/>
+            <input type="radio" name="radio11" id="button21"><br/>
+            <label for="button11">Part-Time</label>
+        </section>
+        <br/>
+        <br/>
+
+
+        <label for="textarea11">Additional Comment :</label><br/>
+        <textarea name="textarea11" id="textarea11" cols="60" rows="5"></textarea>
+
+        <input type="submit" name="subbutton" value="Sumbit Application">
+
+    </form>
+
+
+
+
+
+    
+    
+    <hr><hr><br/><br/><br/>
+    <!-- Form 3: Complex Form (See the image of form in folder.) -->
+
+    <form>
+
+        <h3>Complex Form</h3>
+
+        <fieldset>
+            <legend>personal Information</legend>
+
+            <label for="username3">Name :</label>
+            <input type="text" name="username3" id="username3">
+
+            <label for="emailid3">Email :</label>
+            <input type="email" name="emailid3" id="emailid3">
+
+            <label for="phno3">Phone :</label>
+            <input type="tel" name="phno3" id="phno3">
+
+            <label for="dob3">Date of Birth :</label>
+            <input type="date" name="dob3" id="dob3">
+
+            <label>Gender :</label>
+            <input type="radio" name="radio31" id="button31">  <!--To select either radio from multiple radio :-->
+            <label for="button11">Male</label>
+            <input type="radio" name="radio31" id="button31">
+            <label for="button11">Female</label>
+
+            <label for="country3">Country :</label>
+            <select name="country3" id="country3">
+                <option value="United Sates">United States</option>
+                <option value="India">India</option>
+                <option value="Japan">japan</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+            </select>
+
+        </fieldset>
+
+        
+        <!-- Another Fieldset: -->
+        <fieldset>
+                
+            <legend>Address 
+                <label for="street3">Street:</label>
+                <input type="text" name="street3" id="street3">
+
+                <label for="city3">City:</label>
+                <input type="text" name="city3" id="city3">
+
+                <label for="state3">State:</label>
+                <input type="text" name="state3" id="state3">
+                
+                <label for="Zipcode3">State:</label>
+                <input type="text" name="Zipcode3" id="Zipcode3">
+
+
+            </legend>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Other Information</legend>
+
+            <label for="comments3">Comments</label>
+            <textarea name="comments3" id="comments3" cols="60" rows="5"></textarea>
+
+            <label for="policy3">I agree to the terms of service</label>
+            <input type="checkbox" name="policy3" id="policy3">
+        </fieldset>
+
+        <input type="submit" name="subbutton3" id="subbutton3" value="Submit">
+
+
+    </form>
+
+</body>
+</html>
