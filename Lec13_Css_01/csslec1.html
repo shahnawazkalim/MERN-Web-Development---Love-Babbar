@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture : 13 - Css_1</title>
+
+    <!-- Internal CSS : -->
+    <style>
+      h1 {
+        color: green;
+      }
+    </style>
+
+    <!-- External CSS : -->
+    <link rel="stylesheet" href="extrnCss.css" />
+
+    
+    
+    <!-- Different Types of Selectors :  -->
+    <style>
+      /* id selector : # is used to access the element of that id */
+      #article1 {
+        background-color: blueviolet;
+      }
+
+      /* class selector : . is used to access the element of that class*/
+      .class1 {
+        color: brown;
+        text-align: center;
+      }
+
+      /* group selector : , is used to group multiple elements together*/
+      article, .class1{
+        width: 500px;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to Web dev HEADING.</h1>
+
+    <!-- CSS Selector : Inline, Internal, External -->
+    <!-- Inline CSS : -->
+    <p style="background-color: lightblue">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, quam
+      vitae consequatur molestiae harum ipsam sunt vero repellendus iure ipsa.
+    </p>
+
+    <p style="color: tomato">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero officiis
+      mollitia earum iste labore molestiae quis maxime sunt, magni sit
+      praesentium? Totam et nesciunt, laboriosam aperiam voluptatum incidunt
+      rerum inventore?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolore
+      eaque architecto iste temporibus accusamus minus autem, dignissimos
+      nostrum quam fugiat eveniet corrupti facere placeat. Porro repellendus
+      excepturi voluptatum voluptas totam! Vel eos fugiat cumque libero
+      consectetur nesciunt accusantium facere sint provident exercitationem
+      aliquid, dolor placeat tempore numquam non totam.
+    </p>
+
+    <section>
+      <article id="article1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. A laboriosam
+        aliquid corporis porro! Rem animi excepturi suscipit quidem, delectus
+        similique molestiae id facere non quo sit, illo dolorem porro tenetur
+        ullam dolorum? Aut quod beatae aspernatur id, maiores tempore
+        laudantium, voluptatum aperiam quasi eveniet debitis impedit doloremque
+        quaerat eum totam.
+      </article>
+
+      <p class="class1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
+        iure consequatur doloremque quibusdam quia voluptates! Exercitationem ea
+        harum vero adipisci consectetur cum maxime illo saepe velit numquam, vel
+        ducimus ab sequi illum, accusamus eaque laudantium quos beatae qui
+        consequuntur sapiente architecto? Sapiente repellat minus voluptas!
+      </p>
+    </section>
+  </body>
+</html>
