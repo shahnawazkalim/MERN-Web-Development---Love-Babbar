@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture : 16 - Css_4</title>
+
+    <style>
+        div{
+            border: 2px solid brown;
+            /* custom change can be applied on block element (eg.div, p, h) */
+            height: 80px;
+            width: 300px;
+            margin: 30px;
+            padding: 20px;
+
+            /* display : can convert "block to inline" */
+            /* display: inline; */
+        }
+
+        span{
+            border: 2px solid green;
+            /* custom change cannot be applied on iline element(eg.span) */
+            height: 20px;
+            width: 300px;
+
+            margin: 30px; /* margin can be applied only in horizontal dir not verticle*/
+            padding: 20px;
+
+            /* display : can convert "inline to block"*/
+            /* display: block; */
+        }
+
+        #inlineblock{       /*inline-block behave as inline but allow custom changes*/
+            display: inline-block;
+            margin: 30px;
+            height: 150px;
+            width: 400px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div>Welocme to CSS lecture no 4 :</div>
+
+    <div>Welocme to Web Dev Series</div>
+
+    <span>This is first span element</span>
+    <span>This is second span element</span>
+
+    
+    <span id="inlineblock">This span is inline-block : behave as inline but custom changes can be made.</span>
+</body>
+</html>
