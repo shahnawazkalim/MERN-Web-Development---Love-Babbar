@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture : 17 - Css_5</title>
+    <style>
+        img{
+            border: 2px solid black;
+
+            /* margin-left: 15px; */
+            margin: 15px;
+        }
+
+        .container{
+            border: 2px solid brown;
+            background-color: lightgoldenrodyellow; 
+            height: 2000px; /* use height to see fixed & sticky postioning */
+        }
+
+        /* relative postion : postion the content within or relative to current window/section */
+        /* .image2{
+            position: relative;
+            top: 100px;
+        } */
+
+
+        /* absolute postion : postion the content relative to nearest ancestor */
+        /* .image3{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        } */
+
+        /* fixed postion : content is intact at its position "for all the sections of code" even page scrolls*/
+        /* .image4{
+            position: fixed;
+            top: 100px;
+        } */
+
+        /* sticky postion : content is intact at its position "only within its parent container(section)" even page scrolls*/
+        /* .image2{
+            position: sticky;
+            top: 50px;
+        }
+
+        .box{
+            background-color: aliceblue;
+            border: solid black;
+            height: 1000px;
+        } */
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <img src="1655647304560.jpg" alt="Daniya1" 
+        style="height: 250px; width: 250px;"
+        class="image1">
+        
+        <img src="1655647304578.jpg" alt="Daniya2" 
+        style="height: 250px; width: 250px;"
+        class="image2">
+        
+        <img src="1655647304597.jpg" alt="Daniya3" 
+        style="height: 250px; width: 250px;"
+        class="image3">
+        
+        <img src="1655647304618.png" alt="Daniya4" 
+        style="height: 250px; width: 250px;"
+        class="image4">
+    </div>
+
+    <div class="box">Another Div container to see sticky position property.</div>
+</body>
+</html>
