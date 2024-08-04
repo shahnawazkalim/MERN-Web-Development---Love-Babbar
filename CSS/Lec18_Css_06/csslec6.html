@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture : 18 - Css_6</title>
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        
+        /* % unit : percent of viewport or screen */
+        .box1{
+            border: 2px solid tomato;
+            width: 50%;    /*50% of vieport or screen*/
+        }
+
+        .parent{
+            border: 1px solid green;
+            background-color: bisque;
+            width: 50%;    /*50% of viewport or screen*/
+        }
+        .child{
+            border: 1px solid palevioletred;
+            background-color: magenta;
+            width: 25%;    /*25% of parent border*/
+        }
+
+
+        /* vh unit : verticle & horzontal length */
+        .container{
+            border: 2px solid goldenrod;
+            background-color: aliceblue;
+            height: 100vh;  /* vh : viewport height*/
+            width: 60vw;   /* vw : viewport width*/
+        }
+
+        /* px unit : by default 16px is contained. */
+        .box2{
+            border: 1px solid black;
+            font-size: 100px;
+        }
+
+
+        /* em : em*px = size */
+        .wrapper{
+            font-size: 1em;  /* 1em=16px default size*/
+        }
+
+        .px1{
+            width: 200px;
+        }
+        .vw1{
+            width: 10vw;
+        }
+        .em1{
+            width: 10em;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">Welcome to Css lecture 6</div>
+
+    <div class="parent">
+        <div class="child">
+            CHILD
+        </div>
+    </div>
+
+    
+    <br/><br/>
+    <div class="container">vh unit : vieport height = 100%<br/>wh unit : viewport width50%</div><br/>
+
+
+    <br/><br/>
+    <div class="box2">This is an another div container.</div>
+
+
+    <br/><br/>
+    <div class="wrapper">
+        <div class="box px1">I am 200px wide</div>
+        <div class="box vw1">I am 10vw wide</div>
+        <div class="box em1">I am 10em wide  = 10*16px = 160px</div>
+    </div>
+
+</body>
+</html>
