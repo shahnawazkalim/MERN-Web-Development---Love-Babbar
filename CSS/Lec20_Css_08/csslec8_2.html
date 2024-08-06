@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture : 20 - Css_8-2</title>
+
+    <style>
+      .container {
+        background-color: blanchedalmond;
+        border: 5px solid black;
+        margin: 2px;
+        padding: 2px;
+
+        display: flex;
+      }
+
+      .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid tomato;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        /* flex items properties: order, flex-grow, flex-shrink, flex-basis,flex, align-self */
+        #item1{
+            background-color: aqua;
+            order: 3;
+        }
+        #item2{
+            background-color: blue;
+            order: 1;
+        }
+        #item3{
+            background-color: orange;
+            order: 4;
+        }
+        #item4{
+            background-color: brown;
+            order: 2;
+            
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box" id="item1">A</div>
+      <div class="box" id="item2">B</div>
+      <div class="box" id="item3">C</div>
+      <div class="box" id="item4">D</div>
+    </div>
+  </body>
+</html>
