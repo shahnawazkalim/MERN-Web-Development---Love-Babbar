@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture : 21 - Css_9 [MEDIA QUERIES]</title>
+
+    <style>
+      /* Example 1 : Content goes below for one example */
+      /* .box{
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+        } */
+
+      /* @media : this is media query use to change to display vieport */
+
+      /* it will be applied for 500px and above*/
+      /* @media (min-width :500px ) {
+            .box{
+                background-color: green;
+            }
+            
+        } */
+
+      /* it will be applied for 0px to 500px values*/
+      /* @media (max-width :500px ) {
+            .box{
+                background-color: green;
+            }
+            
+        } */
+
+      /* it will be applied for in range (300px - 500px) */
+      /* @media (min-width : 300px) and (max-width: 500px) {
+            .box{
+                background-color: green;
+            }
+            
+        } */
+
+      /* Example 2: content goes below for example 2 */
+      /* .container{
+            background-color: beige;
+            border: 3px solid black;
+            margin: 2px;
+            padding: 2px;
+
+            display: flex;
+        }
+
+        .container > .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid tomato;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        @media (min-width : 640px ) {
+            .container{
+                flex-direction: row;
+            }
+        }
+        @media (max-width : 640px ) {
+            .container{
+                flex-direction: column;
+            }
+        } */
+
+      /* Example 3 : */
+
+      .main_container{
+        background-color: antiquewhite;
+        border: 2px solid black;
+        margin: 2px;
+        padding: 2px;
+        width: 420px;
+
+        display: flex;
+        }
+        
+      .container1 {
+        background-color: lightcyan;
+        margin: 2px;
+        padding: 2px;
+        height: 200px;
+        width: 200px;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .container1 > p {
+        margin: 2px;
+        padding: 2px;
+        height: 50px;
+        width: 100px;
+        border: 2px solid tomato;
+      }
+
+      .container2 {
+        display: flex;
+        margin: 2px;
+        padding: 2px;
+      }
+
+      @media (max-width: 640px) {
+        .main_container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Example 1 :  -->
+    <!-- <div class="box">
+        Hello Lecture 21 
+    </div> -->
+
+    <!-- Example 2 :  -->
+    <!-- <div class="container">
+        <div class="box" style="background-color: aquamarine;"></div>
+        <div class="box" style="background-color: blue;"></div>
+        <div class="box" style="background-color: orange;"></div>
+        <div class="box" style="background-color: brown;"></div>
+    </div> -->
+
+    <!-- Example 3 : -->
+    <div class="main_container">
+
+      <div class="container1">
+        <p>Text1</p>
+        <p>Text2</p>
+      </div>
+
+      <div class="container2">
+        <img src="Daniya.jpg" alt="Daniya" style="height: 200px; width: 200px;"/>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
