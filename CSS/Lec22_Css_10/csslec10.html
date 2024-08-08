@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture : 22 - Css_10  [SHADOW]</title>
+    
+    <style>
+        .container{
+            background-color:beige;
+            border: 2px solid black;
+            height: 650px;
+            
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: lightcoral;
+            width: 330px;
+            height: 330px;
+            border: 1px solid maroon;
+            margin: 5px;
+            padding: 5px;
+
+            /* Box-shadow : x-offset y-offset color*/
+            /* box-shadow: 10px 15px brown; */
+
+            /* Box-shadow : x-offset y-offset blur color*/
+            /* box-shadow: 10px 15px 5px brown; */
+
+            /* Box-shadow : x-offset y-offset blur spread color*/
+            /* box-shadow: 10px 15px 5px 15px brown; */
+
+            /*inset : shadow inside of box  */
+            /* box-shadow: inset 10px 15px brown; */
+
+            /* Multiple Shadows :  */
+            box-shadow:  10px 15px brown,  15px 20px yellowgreen;
+
+        }
+
+        #head1{
+            text-shadow: 4px 4px 5px white ;
+        }
+    </style>
+</head>
+
+  <body>
+
+    <div class="container">
+      <div class="box">
+        <img src="Shahnawaz.jpg" alt="Shahnawaz" style="height: 100px; width: 100px;" />
+        <h2 id="head1">Welcome to CSS Leture no 10</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magnam
+          eaque repellendus quidem! Quis in provident eveniet voluptatibus
+          quisquam. Accusamus, saepe, quibusdam deleniti eos ipsam cupiditate
+          sapiente fugit tempore quos, laborum voluptate nostrum vero dolorem
+          consequuntur officia officiis tempora eligendi!
+        </p>
+      </div>
+    </div>
+    
+  </body>
+</html>
