@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture : 23 - Css_11  [ANIAMTION]</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container1 {
+        width: 100vw;
+        height: 100vh;
+        border: 3px solid black;
+        background-color: beige;
+      }
+
+      .box1 {
+        width: 200px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 25px;
+        border-radius: 25px;
+        border: 2px solid darkcyan;
+        background-color: green;
+
+
+        position: relative; /* postion should be declare to use top,left propeties*/
+        animation-name: left_movement; /* name of animation*/
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+
+        animation-timing-function: linear;
+        animation-direction: alternate;
+
+        animation-fill-mode: forwards; /* after completion of iteration stop in forwad postion*/
+        /* animation-play-state: running; */
+
+      }
+      @keyframes left_movement {
+        from {
+          top: 0;
+          left: 0;
+        }
+
+        to {
+          top: 0;
+          left: 1100px;
+        }
+      }
+
+
+      .box2 {
+        width: 200px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 25px;
+        border: 2px solid darkcyan;
+        background-color: green;
+
+        
+
+        position: relative;
+        /* Shorthand propety : animation */
+        /* @keyframes duration | easing-function | delay |iteration-count | direction | fill-mode | play-state | name */
+        animation: 4s linear 1s infinite  alternate forwards running right_movement;
+
+      }
+      @keyframes right_movement {
+        from {
+          top: 500px;
+          left: 1100px;
+        }
+
+        to {
+          top: 500px;
+          left: 0;
+        }
+      }
+
+
+      .circlebox {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        border: 2px solid darkcyan;
+        background-color: tomato;
+
+        position: relative;
+        top: 25%;
+        left: 50%;
+
+        animation: 10s linear 1s 3  alternate forwards running circle_movement;
+      }
+      @keyframes circle_movement {
+       
+        5% {top: 25%; left: 50%;}
+        25% {left: 1100px; top: 350px;}
+        50% {left: 100px; top: 10px; }
+        75% {left: 1100px; top: 10px;}
+        100% {left: 100px; top: 350px;}
+      }
+
+    
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container1">
+      <div class="box1"></div>
+
+      <div class="box2"></div>
+
+      <div class="circlebox"></div>
+    </div>
+
+  </body>
+</html>
