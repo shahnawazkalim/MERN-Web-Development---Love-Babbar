@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture : 24 - Css_12  [TRANSITION]</title>
+
+
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: beige;
+            border: 2px solid black;
+
+
+            /* 1st state or source state of transition */
+            transition-property: all;  
+            transition-duration: 3s;
+            transition-delay: 1s;
+            transition-timing-function: linear;
+
+            /* transition  : property, duration, delay, ease,*/
+            /* transition: width 3s, height 2s 1s linear ; */
+        }
+        .box:hover{       /* 2nd state or destination state*/
+            width: 1000px;
+            /* height: 1000px; */
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>
