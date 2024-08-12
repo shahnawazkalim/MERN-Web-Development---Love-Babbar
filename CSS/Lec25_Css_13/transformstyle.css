@@ -1,0 +1,35 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: beige;
+    border: 2px solid black;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 2s 1s linear ;   /*apply transition for smooth transformation*/
+}
+
+p{
+    font-size: 18px;
+}
+
+.box:hover{
+    transform: rotate(-45deg);
+    transform: scale(1.5);
+    transform: skew(45deg);
+    transform: translate(200px, 200px);
+    /* transform: perspective(17px); */
+}
+
+/* Comment all trasnformation one by one and see the effects */
