@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.cont_container{
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* ------------------------Card 1 : -----------------------*/
+.card1{
+    height: 340px;
+    width: 220px;
+    border-radius: 10px;
+    background-color: rgba(48, 129, 175, 0.822);
+    box-shadow: 4px 4px 15px black;
+    padding: 15px;
+    gap: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+}
+.card1:hover{
+    box-shadow: 7px 6px 30px 4px black;
+}
+#qrimg{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+
+    align-self: center;
+
+}
+
+/* ------------------------Card 2 : -----------------------*/
+.card2{
+    height: 370px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 4px 4px 15px black;
+    /* padding: 15px; */
+    gap: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+}
+.card2:hover{
+    box-shadow: 7px 6px 30px 4px black;
+}
+#banner{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* box-shadow: 1px 1px 5px black; */
+    /* align-self: center; */
+
+}
+.container{
+    padding: 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.plan{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    /* flex-direction: column; */
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    /* border: 1px solid black; */
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.plan:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.plan>img {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+.batch{
+    width: 200px;
+    color: azure;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    /* border-bottom: 1px solid black; */
+    box-shadow: 3px 0 10px 2px black;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+.batch:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
