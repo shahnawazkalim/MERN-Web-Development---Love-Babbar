@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture : 31 - Css_19-1  [ CSS Grid   - Tricks]</title>
+
+    <style>
+
+        /* Responsive Design - Instead of using several media queries 
+            "Use auto-fit, auto-fill - in gtc"  */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            padding: 4rem;
+            background-color: rgb(219, 219, 182);
+            
+            display: grid;
+            gap: 1rem;
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 300px));  /*Prevent writing of Lots of Media Queries codes*/
+
+        }
+        .items{
+            border: 2px solid black;
+            background-color: rgb(92, 173, 146);
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+        <div class="items">D</div>
+        <div class="items">E</div>
+        <div class="items">F</div>
+        <div class="items">G</div>
+        <div class="items">H</div>
+    </div>
+</body>
+</html>
